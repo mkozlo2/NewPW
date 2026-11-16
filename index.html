@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maja Kozlowska // SWE</title>
+    <title>Maja Kozlowska — Software Engineer</title>
+    <meta name="description" content="c">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;700&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --cream: #f0ebe0;
@@ -764,20 +765,23 @@
             footer { padding: 24px 80px; }
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="noise"></div>
 
 <header class="menubar">
-    <span class="apple-logo">✦ MK</span>
-    <ul class="menubar-items">
-        <li><a href="#" data-tab="about" class="active-link">About</a></li>
-        <li><a href="#" data-tab="projects">Projects</a></li>
-        <li><a href="#" data-tab="experience">Experience</a></li>
-        <li><a href="#" data-tab="contact">Contact</a></li>
-    </ul>
-    <span class="menubar-right" id="clock">00:00:00</span>
+    <a class="apple-logo" href="#" data-tab="about" aria-label="Maja Kozlowska home">MK<span>.</span></a>
+    <nav aria-label="Main navigation">
+        <ul class="menubar-items">
+            <li><a href="#about" data-tab="about" class="active-link">About</a></li>
+            <li><a href="#projects" data-tab="projects">Projects</a></li>
+            <li><a href="#experience" data-tab="experience">Experience</a></li>
+            <li><a href="#contact" data-tab="contact">Contact</a></li>
+        </ul>
+    </nav>
+    <span class="menubar-right"><span class="availability-dot"></span>Open to 2026 roles</span>
 </header>
 
 <div class="window hero-window">
@@ -785,31 +789,25 @@
         <span class="window-btn"></span>
         <span class="window-btn"></span>
         <span class="window-btn"></span>
-        <span class="window-title">Maja_Kozlowska.exe — Personal Portfolio v1.0</span>
+        <span class="window-title">MAJA KOZLOWSKA <span>/ SOFTWARE ENGINEER</span></span>
     </div>
     <div class="hero-body">
         <div class="hero-left">
-            <p class="hero-eyebrow">// hello, world</p>
-            <h1 class="hero-name">Maja<br><span>Kozlowska</span></h1>
-            <p class="hero-title">Software Engineer_<span class="blink">█</span></p>
+            <p class="hero-eyebrow"><span class="availability-dot"></span>Computer Engineering · Michigan Tech ’26</p>
+            <h1 class="hero-name">Maja <span>Kozlowska</span></h1>
+            <p class="hero-title">Software Engineer</p>
             <p class="hero-desc">
-                Computer Engineering student @ Michigan Tech (2026). Building things with C#/.NET,
-                embedded systems, REST APIs, and whatever it takes. Division II basketball athlete.
-                Fluent in English, Polish, and Stack Overflow.
+                Software Engineer with experience building full-stack applications and distributed systems. Proficient in Java, Python, and C# with hands-on experience developing REST APIs, integrating frontend and backend systems, and deploying scalable applications using Docker and Kubernetes. Strong foundation in software engineering fundamentals, testing, and system reliability, with experience delivering production-grade solutions in collaborative, cross-functional environments.
             </p>
             <div class="hero-buttons">
-                <a href="#" data-tab="projects" class="btn-retro btn-primary">View Projects</a>
-            </div>
-        </div>
-        <div class="hero-right">
-            <div class="profile-frame" style="position:relative;">
-                <img src="images/profile-pic-maja.png" alt="Maja Kozlowska">
+                <a href="#projects" data-tab="projects" class="btn-retro btn-primary">Explore my projects <span aria-hidden="true">↗</span></a>
+                <a href="#contact" data-tab="contact" class="btn-retro btn-secondary">Get in touch</a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="stats-bar">
+<!-- <div class="stats-bar">
     <div class="stat-item">
         <span class="stat-num">1500+</span>
         <span class="stat-label">Customers Served</span>
@@ -822,7 +820,7 @@
         <span class="stat-num">D2</span>
         <span class="stat-label">Basketball Athlete</span>
     </div>
-</div>
+</div> -->
 
 <section id="about" class="section active">
     <div class="window" style="width:min(82vw, 1460px); max-width:1460px; margin: 30px auto 0;">
@@ -891,8 +889,22 @@
 
         <div style="border:2px solid var(--border); box-shadow: 4px 4px 0 var(--border); margin-bottom: 2px;">
             <div class="project-grid">
-                <a href="https://github.com/mkozlo2/Football-Prediction-Market-System" target="_blank" class="project-pod project-featured project-hero">
-                    <div class="project-tag">// Featured · ML + Trading Simulation</div>
+                <a href="https://github.com/mkozlo2/spotifyWrappedAllYear" target="_blank" rel="noopener noreferrer" class="project-pod project-featured project-hero project-soundprint">
+                    <div class="project-art soundprint-art" aria-hidden="true"><span>sound<br>print</span></div>
+                    <div class="project-tag">// Latest · Spotify Listening Analytics</div>
+                    <h3>Soundprint</h3>
+                    <p>Spotify Wrapped makes you wait all year to see your top tracks. Soundprint brings the receipts whenever you get curious—even in May. Your “I listen to everything” era is now under review.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Spotify Web API</span>
+                        <span class="tech-tag">OAuth 2.0</span>
+                        <span class="tech-tag">SQLite</span>
+                    </div>
+                </a>
+                <a href="https://github.com/mkozlo2/Football-Prediction-Market-System" target="_blank" rel="noopener noreferrer" class="project-pod project-featured project-hero project-football">
+                    <div class="project-art football-art" aria-hidden="true"><span>1</span><span>X</span><span>2</span></div>
+                    <div class="project-tag">// ML · Football Prediction Market</div>
                     <h3>Football Prediction Market Trading System</h3>
                     <p>End-to-end Python pipeline that predicts football match outcomes, calibrates home, draw, and away probabilities, compares them against bookmaker-implied prices, identifies value bets, and simulates bankroll growth with fractional Kelly sizing and backtesting.</p>
                     <div class="project-tech">
@@ -904,44 +916,6 @@
                         <span class="tech-tag">Kelly Sizing</span>
                         <span class="tech-tag">Backtesting</span>
                         <span class="tech-tag">Docker</span>
-                    </div>
-                </a>
-                <div class="project-pod">
-                    <div class="project-tag">// Featured · Embedded Systems</div>
-                    <h3>AstroTap</h3>
-                    <p>Touchscreen game for STM32 NUCLEO-L152RE — custom SPI/I2C drivers, PWM-controlled LED feedback, a state-machine UI with three interactive screens, and real-time collision detection. All in C using STM32 HAL.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C</span>
-                        <span class="tech-tag">STM32 HAL</span>
-                        <span class="tech-tag">SPI</span>
-                        <span class="tech-tag">I2C</span>
-                        <span class="tech-tag">PWM</span>
-                        <span class="tech-tag">State Machines</span>
-                    </div>
-                </div>
-                <div class="project-pod project-featured">
-                    <div class="project-tag">// Featured · Creator Analytics</div>
-                    <h3>YouTube Partner Analytics Platform</h3>
-                    <p>Production-style analytics workspace for creators and media teams to connect a YouTube account, sync channel data, inspect trends, review weak-performing videos, and troubleshoot OAuth and API issues from one place.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">OAuth 2.0</span>
-                        <span class="tech-tag">YouTube Analytics API</span>
-                        <span class="tech-tag">SQLite</span>
-                    </div>
-                </div>
-                <a href="https://github.com/mkozlo2/spotifyWrappedAllYear" target="_blank" rel="noopener noreferrer" class="project-pod project-featured">
-                    <div class="project-tag">// Featured · Music Analytics API</div>
-                    <h3>Soundprint</h3>
-                    <p>Local Spotify listening analytics API with OAuth, top artists and tracks, app-collected listening history, and saved snapshots for comparing rankings over time.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Spotify Web API</span>
-                        <span class="tech-tag">OAuth 2.0</span>
-                        <span class="tech-tag">SQLite</span>
                     </div>
                 </a>
                 <a href="#" class="project-pod project-featured" onclick="return handleBearAwareClick(event);">
@@ -956,6 +930,19 @@
                         <span class="tech-tag">Socket Programming</span>
                     </div>
                 </a>
+                <div class="project-pod project-featured">
+                    <div class="project-tag">// Featured · Creator Analytics</div>
+                    <h3>YouTube Partner Analytics Platform</h3>
+                    <p>Production-style analytics workspace for creators and media teams to connect a YouTube account, sync channel data, inspect trends, review weak-performing videos, and troubleshoot OAuth and API issues from one place.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">OAuth 2.0</span>
+                        <span class="tech-tag">YouTube Analytics API</span>
+                        <span class="tech-tag">SQLite</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -973,10 +960,10 @@
                         <span class="tech-tag">REST API</span>
                     </div>
                 </a>
-                <a href="https://github.com/mkozlo2/AstroApp" target="_blank" class="project-pod">
-                    <div class="project-tag">// DevOps · Automation</div>
+                <a href="https://github.com/mkozlo2/AstroApp" target="_blank" rel="noopener noreferrer" class="project-pod">
+                    <div class="project-tag">// Embedded Systems</div>
                     <h3>AstroTap</h3>
-                    <p>Touchscreen game for STM32 NUCLEO-L152RE - custom SPI/I2C drivers, PWM-controlled LED feedback, a state-machine UI with three interactive screens, and real-time collision detection. All in C using STM32 HAL.</p>
+                    <p>Touchscreen game for STM32 NUCLEO-L152RE — custom SPI/I2C drivers, PWM-controlled LED feedback, a state-machine UI with three interactive screens, and real-time collision detection. All in C using STM32 HAL.</p>
                     <div class="project-tech">
                         <span class="tech-tag">C</span>
                         <span class="tech-tag">STM32 HAL</span>
@@ -1011,19 +998,15 @@
                 </a>
             </div>
             <div class="project-grid" style="border-top: 2px solid var(--border);">
-                <div class="project-pod">
-                    <div class="project-tag">// Full Stack · Creator Analytics</div>
-                    <h3>YouTube Partner Analytics Platform</h3>
-                    <p>Production-style analytics workspace for creators and media teams to connect a YouTube account, sync channel data, inspect trends, review weak-performing videos, and troubleshoot OAuth and API issues from one place.</p>
+                <a href="https://github.com/mkozlo2/BackupApp" target="_blank" rel="noopener noreferrer" class="project-pod">
+                    <div class="project-tag">// DevOps · Automation</div>
+                    <h3>Git Backup App</h3>
+                    <p>Automates and secures backup and restoration of GitHub repository issues, ensuring data integrity throughout the process.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">OAuth 2.0</span>
-                        <span class="tech-tag">YouTube Analytics API</span>
-                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">GitHub API</span>
                     </div>
-                </div>
+                </a>
                 <a href="https://github.com/mkozlo2/Task-Manager" target="_blank" class="project-pod">
                     <div class="project-tag">// Full Stack</div>
                     <h3>Task Manager</h3>
@@ -1165,60 +1148,12 @@
         });
     });
 
-    function normalizeProjectCards() {
-        const projectCards = Array.from(document.querySelectorAll('.project-pod'));
-        const featuredGrid = document.querySelector('#projects .project-grid');
-        const astroCard = projectCards.find(card => card.querySelector('h3')?.textContent.trim() === 'AstroTap');
-        const youtubeCards = projectCards.filter(card => card.querySelector('h3')?.textContent.trim() === 'YouTube Partner Analytics Platform');
-
-        if (astroCard && astroCard.closest('.project-grid') === featuredGrid) {
-            astroCard.remove();
-        }
-
-        const upperAstroCard = projectCards.find(card =>
-            card.querySelector('h3')?.textContent.trim() === 'AstroTap' &&
-            card.closest('.project-grid') !== featuredGrid
-        );
-        const upperAstroTag = upperAstroCard?.querySelector('.project-tag');
-        if (upperAstroTag) {
-            upperAstroTag.textContent = '// Embedded Systems';
-        }
-
-        if (youtubeCards.length > 1) {
-            const regularYoutubeCard = youtubeCards.find(card => !card.classList.contains('project-featured'));
-            if (regularYoutubeCard) {
-                regularYoutubeCard.outerHTML = `
-                <a href="https://github.com/mkozlo2/BackupApp" target="_blank" class="project-pod">
-                    <div class="project-tag">// DevOps · Automation</div>
-                    <h3>Git Backup App</h3>
-                    <p>Automates and secures backup and restoration of GitHub repository issues, ensuring data integrity throughout the entire process.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">GitHub API</span>
-                    </div>
-                </a>`;
-            }
-        }
-    }
-
     function handleBearAwareClick(event) {
         if (event) event.preventDefault();
         alert('Bear-Aware is still in production, so the source code is not publicly available yet.');
         return false;
     }
 
-    function updateClock() {
-        const now = new Date();
-        const h = String(now.getHours()).padStart(2, '0');
-        const m = String(now.getMinutes()).padStart(2, '0');
-        const s = String(now.getSeconds()).padStart(2, '0');
-        const clock = document.getElementById('clock');
-        if (clock) clock.textContent = `${h}:${m}:${s}`;
-    }
-
-    setInterval(updateClock, 1000);
-    updateClock();
-    normalizeProjectCards();
 </script>
 
 </body>
